@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.valor1 {
+    display: flex;
+    padding-top: 20px;
+}
+
+.valor2 {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+button {
+    width: 100px;
+}
