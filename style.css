@@ -18,6 +18,11 @@ body {
 .valor2 {
     display: flex;
     padding-top: 20px;
+}
+
+.valor3 {
+    display: flex;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 

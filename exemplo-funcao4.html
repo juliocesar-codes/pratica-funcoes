@@ -11,9 +11,8 @@
 <body>
     <a href="index.html">Exemplo 1</a>
     <a href="exemplo-funcao2.html">Exemplo 2</a>
-    <a href="exemplo-funcao4.html">Exemplo 4</a>
-
-    <h1>Projeto Soma</h1>
+    <a href="exemplo-funcao3.html">Exemplo 3</a>
+    <h1>Projeto Media</h1>
     <div class="valor1">
         <p>Valor 01:</p>
         <input type="text" name="" id="n1">
@@ -21,6 +20,11 @@
     <div class="valor2">
         <p>Valor 02:</p>
         <input type="text" name="" id="n2">
+    </div>
+
+    <div class="valor3">
+        <p>Valor 03:</p>
+        <input type="text" name="" id="n3">
     </div>
 
     <button id="botaoCalcular">Calcular</button>
@@ -35,12 +39,12 @@
             function calcular() {
                 let n1 = parseInt(document.getElementById('n1').value)
                 let n2 = parseInt(document.getElementById('n2').value)
+                let n3 = parseInt(document.getElementById('n3').value)
 
-
-                let total = n1 + n2;
+                let media = (n1 + n2 + n3) / 3;
 
                 const novoParagrafo = document.createElement('p');
-                novoParagrafo.textContent = `TOTAL: ${total}`
+                novoParagrafo.textContent = `MÉDIA: ${media}`
                 const elementoResultado = document.getElementById('resultado');
                 elementoResultado.appendChild(novoParagrafo);
             }
